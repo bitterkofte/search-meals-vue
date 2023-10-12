@@ -11,5 +11,5 @@
 
 //SCRIPT
 <script setup>
-import Navbar from '../components/Navbar.vue'
+import Navbar from './Navbar.vue'
 </script>

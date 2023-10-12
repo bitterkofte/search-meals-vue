@@ -6,6 +6,8 @@ import MBNView from '../views/MBNView.vue'
 import MBIView from '../views/MBIView.vue'
 import MBLView from '../views/MBLView.vue'
 import DefaultLayout from '../components/DefaultLayout.vue'
+import GuestLayout from '../components/GuestLayout.vue'
+import MealDetailsView from '../views/MealDetailsView.vue'
 
 const routes = [
   {
@@ -33,6 +35,11 @@ const routes = [
         component: MBIView
       },
       {
+        path: '/meal/:id?',
+        name: 'mealDetails',
+        component: MealDetailsView
+      },
+      {
         path: '/letter/:ltr',
         name: 'MealList',
         component: MealListView,
@@ -46,7 +53,10 @@ const routes = [
       },
     ]
   },
-  
+  {
+    path: '/guest',
+    component: GuestLayout
+  }
 ]
 
 const router = createRouter({
