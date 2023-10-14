@@ -8,7 +8,7 @@
     @change="props.kw"
   />
 </div>
-a: {{ props.kw }}
+<!-- a: {{ props.kw }} -->
 </template>
 
 

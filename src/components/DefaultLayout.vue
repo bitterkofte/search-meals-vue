@@ -2,7 +2,7 @@
 <template>
 <div class='h-full bg-neutral-100'>
   <Navbar />
-  <main>
+  <main class="min-h-screen">
     <router-view/>
   </main>
 </div>
